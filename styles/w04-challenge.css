@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+}
+body p {
+    margin: 0 auto;
+    text-align: center;
+}
+#text-align-center {
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+div .text-cite {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+div h1, p {
+    color: white;
+    width: 50%;
+}
+.text-align {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+section img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+#cite-block {
+    padding-bottom: 3em;
+}
+div .cite {
+    color: black;
+}
+div ol {
+    margin: auto;
+    display: block;
+     width: 30%;
+    padding: 1em 0;
+
+}
