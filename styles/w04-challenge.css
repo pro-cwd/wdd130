@@ -42,5 +42,7 @@ div ol {
     display: block;
      width: 30%;
     padding: 1em 0;
-
 }
+#text-align-center:hover {
+    color: black;
+  }
