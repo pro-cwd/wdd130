@@ -1,0 +1,74 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a, #hero-msg h1, #hero-msg h4,
+.button-box, main section {
+    text-align: center;
+    
+}
+.logo {
+    width: 80px;
+}
+#background {
+    height: 725px;
+    background-color: #06d6a0;
+}
+body {
+    background-color: #fcfbfb;
+    font-family: 'Rock Salt', cursive;
+}
+header {
+    background-color: #fafafa;
+}
+nav a:hover {
+    background-color: black;
+}
+/* .book, .join
+.book:hover, .join:hover */
+
+.msg {
+    background-color: #06d6a0;
+}
+footer {
+    background-color: #073b4c;
+}
+nav a:hover {
+    background-color: #e4ff1a;
+    color: black;
+} 
+nav a {
+    color: #118ab2;
+    text-align: center;
+    text-decoration: none;
+}
+/*.home-title
+h4 */
+/* .book, .join
+.book:hover, .join:hover */
+.msg h2, .msg p {
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+footer, footer a, footer a:hover {
+    color: #fafafa;
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+.icon {
+    width: 80px;
+}
+#hero-img {
+    width: 100%;
+}
+.card-img {
+    width: 50%;
+}
