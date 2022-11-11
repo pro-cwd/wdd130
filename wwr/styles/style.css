@@ -22,6 +22,12 @@
     --nav-hover-link-color: white;
     --nav-hover-background-color: #396E94;
 }
+* {
+    box-sizing: border-box;
+  }
+body {
+    text-rendering: optimizeLegibility;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -228,6 +234,80 @@ footer p a:hover {
     width: 100%;
     border: 10px solid #d9c2a3;
 }
+/* rivers page */
+.cardR, .cardL, .cardF {
+    position: relative;
+    height: 850px;
+    line-height: 1.5;
+}
+.cardL {
+    height: 780px;
+}
+.cardR .page-title {
+    position: inherit;
+    background-color: #06D6A0;
+    color: #fafafa;
+    font-family: var(--paragraph-font);
+    padding: 1em;
+}
+.cardR .page-title h3 {
+    padding-right: 30em;
+    text-align: left;
+}
+.cardR figure img, .cardF figure img {
+    width: 100%;
+    max-width: 800px;
+    float: right;
+    image-rendering: high-quality;
+    border: none
+}
+.cardL {
+    margin: 2em 0;
+}
+.cardL figure img {
+    image-rendering: high-quality;
+    max-width: 800px;
+    width: 100%;
+    float: left;
+    border: none
+}
+.cardR figure, .cardF figure {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+}
+.cardL figure {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+.cardR .card-content, .cardL .card-content, .cardF .card-content {
+    font-family: var(--paragraph-font);
+    text-align: left;
+    font-size: 1em;
+    padding-top: 9em;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 21px;
+}
+.cardL .card-content {
+    text-align: right;
+    padding-top: 1em;
+}
+.cardF .card-content {
+    padding-top: 1em;
+}
+.cardR .card-content h2, .cardL .card-content h2, .cardF .card-content h2 {
+    font-family: var(--heading-font);
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*end rivers page */
 /* responsive */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
