@@ -6,16 +6,16 @@
     --secondary-color: #E7C24F ;
     --accent1-color: #A42212;
     --accent2-color: white;
-  
+
     /* change the values below to your chosen font(s) */
     --heading-font: 'rock salt';
     --paragraph-font: 'roboto', Helvetica, sans-serif;
-  
+
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --headline-color-on-white: #396E94;  /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
     --paragraph-background-color: #396E94  ;
     --nav-link-color: #396E94;
     --nav-background-color: #D4AC0D;
@@ -45,7 +45,7 @@ nav {
     text-align: center;
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
-} 
+}
 nav a, .button-box, main section {
     text-align: center;
     color: var(--primary-color);
@@ -108,7 +108,7 @@ main section img {
     grid-row: 2/3;
 }
 #background {
-    grid-column: 1/11; 
+    grid-column: 1/11;
     grid-row: 4/9;
 }
 .mountains {
@@ -120,7 +120,7 @@ main section img {
     grid-row: 6/7;
 }
 /* header {
-    background-color: #fafafa; 
+    background-color: #fafafa;
 } */
 nav a:hover {
     background-color: black;
@@ -134,7 +134,7 @@ nav a:hover {
 nav a:hover {
     background-color: #e4ff1a;
     color: black;
-} 
+}
 nav a {
     color: #118ab2;
     text-align: center;
@@ -202,7 +202,7 @@ h2 {
 footer {
     background-color: #073b4c;
     padding: 25px 50px;
-    margin-top: 200px; 
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -234,74 +234,112 @@ footer p a:hover {
     width: 100%;
     border: 10px solid #d9c2a3;
 }
-/* rivers page */
+/* ------ rivers page */
+.cardR, .cardL, .cardF {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
 .cardR, .cardL, .cardF {
     position: relative;
-    height: 850px;
+    /* height: 850px; */
     line-height: 1.5;
 }
-.cardL {
-    height: 780px;
+.cardL, .cardF {
+    margin: 3em 0;
 }
 .cardR .page-title {
-    position: inherit;
+    height: 100%;
+    max-height: 130px;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    /* position: inherit; */
     background-color: #06D6A0;
     color: #fafafa;
     font-family: var(--paragraph-font);
     padding: 1em;
 }
 .cardR .page-title h3 {
-    padding-right: 30em;
+    padding-right: 20em;
     text-align: left;
-}
-.cardR figure img, .cardF figure img {
-    width: 100%;
-    max-width: 800px;
-    float: right;
-    image-rendering: high-quality;
-    border: none
-}
-.cardL {
-    margin: 2em 0;
-}
-.cardL figure img {
-    image-rendering: high-quality;
-    max-width: 800px;
-    width: 100%;
-    float: left;
-    border: none
-}
-.cardR figure, .cardF figure {
-    position: absolute;
     margin: 0;
-    top: 0;
-    right: 0;
+}
+.cardR figure {
+    grid-column: 5/9;
+    grid-row: 1/4;
+    z-index: 1;
+    margin: 0;
 }
 .cardL figure {
+    grid-column: 1/5;
+    grid-row: 1/4;
+    z-index: 1;
+    margin: 0;
+}
+.cardF figure {
+    grid-column: 5/9;
+    grid-row: 1/4;
+    z-index: 1;
+    margin: 0;
+}
+.card-title {
+    grid-column: 1/5;
+    grid-row: 2/4;
+    text-align: left;
+    padding: 3em 2em;
+}
+.card-titleL {
+    grid-column: 5/9;
+    grid-row: 1/2;
+    text-align: right;
+    padding: 0 2em;
+}
+.card-titleF {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: left;
+    padding: 0 2em;
+}
+.card-content {
+    grid-column: 5/9;
+    grid-row: 2/4;
+    text-align: left;
+}
+.card-contentF {
+    grid-column: 1/5;
+    grid-row: 2/4;
+    text-align: left;
+}
+.cardR figure img, .cardL figure img, .cardF figure img {
+    width: 100%;
+    max-width: 700px;
+    /* float: right; */
+    image-rendering: high-quality;
+}
+.cardR .p1 {
+    grid-column: 2/4;
+    grid-row: 4/6;
+}
+.cardR .p2 {
+    grid-column: 4/6;
+    grid-row: 4/6;
+}
+.cardR .p3 {
+    grid-column: 6/8;
+    grid-row: 4/6;
+}
+/* .cardL figure {
     position: absolute;
     margin: 0;
     top: 0;
     left: 0;
-}
-.cardR .card-content, .cardL .card-content, .cardF .card-content {
+} */
+.cardR .p1, .cardR .p2, .cardR .p3, .cardL .p1, .cardL .p2, .cardL .p3, .cardF .p1, .cardF .p2, .cardF .p3 {
     font-family: var(--paragraph-font);
-    text-align: left;
-    font-size: 1em;
-    padding-top: 9em;
-    padding-left: 3em;
-    padding-right: 3em;
-    font-size: 21px;
+    padding: 1em;
+    font-size: 18px;
+    margin: 0;
 }
-.cardL .card-content {
-    text-align: right;
-    padding-top: 1em;
-}
-.cardF .card-content {
-    padding-top: 1em;
-}
-.cardR .card-content h2, .cardL .card-content h2, .cardF .card-content h2 {
-    font-family: var(--heading-font);
-}
+
 .clearfix:after {
     content: "";
     display: table;
@@ -309,6 +347,27 @@ footer p a:hover {
   }
 /*end rivers page */
 /* responsive */
+@media screen and (max-width: 1200px) {
+    .card-content, .card-contentF {
+        grid-column: 2/8;
+        grid-row: 4/6;
+    }
+}
+
+ @media screen and (max-width: 992px) {
+    .cardR .p1 {
+        grid-column: 2/8;
+        grid-row: 5/6;
+    }
+    .cardR .p2, .cardL .p2 {
+        grid-column: 2/8;
+        grid-row: 6/7;
+    }
+    .cardR .p3, .caedL .p3 {
+        grid-column: 2/8;
+        grid-row: 7/8;
+    }
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -334,7 +393,7 @@ footer p a:hover {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card {
         margin: 50px auto;
         width: 60%;
     }
@@ -348,5 +407,20 @@ footer p a:hover {
     }
     footer {
         margin-top: 25px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card-title {
+        grid-column: 2/8;
+        grid-row: 4/5;
+    }
+    .card-title {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .card-titleL h2 .card-titleF h2 {
+        padding: 0 1em;
+        font-size: 1rem;
     }
 }
