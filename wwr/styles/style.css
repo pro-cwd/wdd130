@@ -339,7 +339,6 @@ footer p a:hover {
     font-size: 18px;
     margin: 0;
 }
-
 .clearfix:after {
     content: "";
     display: table;
@@ -353,7 +352,6 @@ footer p a:hover {
         grid-row: 4/6;
     }
 }
-
  @media screen and (max-width: 992px) {
     .cardR .p1 {
         grid-column: 2/8;
@@ -420,7 +418,6 @@ footer p a:hover {
     .card-title {
         padding: 0;
     }
-    
 }
 @media screen and (max-width: 576px) {
     .card-titleL, .card-titleF {
