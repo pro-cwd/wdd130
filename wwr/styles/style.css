@@ -367,6 +367,9 @@ footer p a:hover {
         grid-column: 2/8;
         grid-row: 7/8;
     }
+    .cardR .page-title h3 {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -417,10 +420,11 @@ footer p a:hover {
     .card-title {
         padding: 0;
     }
+    
 }
 @media screen and (max-width: 576px) {
-    .card-titleL h2 .card-titleF h2 {
+    .card-titleL, .card-titleF {
         padding: 0 1em;
-        font-size: 1rem;
+        font-size: 0.7em;
     }
 }
