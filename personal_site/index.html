@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Omar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="contactus.html">Contact Me</a>
+            </nav>
+        </header>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/hero.jpg" style="width:100%">
+            <div class="text">Foto de <a href="https://unsplash.com/@gustasbrazaitis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustas Brazaitis</a> en <a href="https://unsplash.com/es/s/fotos/programmers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/hero2.jpg" style="width:100%">
+            <div class="text">Foto de <a href="https://unsplash.com/@quincoetzee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Quinton Coetzee</a> en <a href="https://unsplash.com/es/s/fotos/programmers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/hero3.jpg" style="width:100%">
+            <div class="text">Foto de <a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilya Pavlov</a> en <a href="https://unsplash.com/es/s/fotos/programmers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- image text -->
+            <div class="centered">
+                <h1>Welcome to Omar Meza Site</h1>
+                <p>I am Omar Meza from wdd130. I am 41 years old actually I am attending 
+                    for a degree in Applied Technology at BYU-I.</p>
+            </div>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <main>
+            <section id="section-banner">
+                <h1>Hi, World!!!</h1>
+                <p>I began 
+                    as a Graphic Designer 15 years ago. Now, 16 months ago 
+                    I began in the field of web developers through courses on line.
+                     My first goal is to increase my abilities 
+                    to write code for different digital projects. And continue my applied 
+                    technology studies at BYU-I to the next 5 years.</p>
+                <p>the knowledge acquired allows me to design fluent and 
+                    intuitive web pages to connect your business with the world. 
+                    My target point refers to all small and medium businesses that 
+                    needs to build a primary solid web site optimized to browsers and 
+                    movile devices. From Ecuador to the all the world.</p>
+                <img src="images/omarmeza.png" alt="Omar Meza">
+            </section>
+            <section id="section-img">
+                <div><img src="images/image2.png" alt="computers"></div>
+                <div>
+                    <img src="images/goran1.jpg" alt="Foto de Goran Ivos en Unsplash">
+                    <img src="images/goran2.jpg" alt="Foto de Goran Ivos en Unsplash">
+                    <img src="images/nasa.jpg" alt="Foto de NASA en Unsplash">
+                </div>
+            </section>
+            <section id="section-cards">
+                <div>
+                    <h1>Want to work together or have any questions?</h1>
+                    <p>I have worked on some resources and tools; mostly for designers and developers like, Python, Javascript, Html, Css.</p>
+                </div>
+                <div class="card">
+                    <div><img src="images/image3.png" alt="graphic designer icon"></div>
+                    <p>I am a Product and UX Designer! I work at the intersection of curiosity, reasoning and imagination, which guide me to uncover insights, (re)frame problems and craft meaningful, future-oriented solutions.
+                        I am passionate about providing solutions to users by building accessible products.</p>   
+                </div>
+                <div class="card">
+                    <div><img src="images/developer.png" alt="developer icon"></div>
+                    <p>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
+                </div>
+
+                <div class="card">
+                    <div><img src="images/soft.png" alt="sonft icon"></div>
+                    <p>I combine human empathy, research and intelligent data to provide the highest level of satisfaction for organizations and their users.</p>
+                </div>
+            </section>
+            <div>
+                <div>
+                    <h1>Obtain a fist contact. Ask for me here</h1>
+                    <p></p>
+                </div>
+                <div><img src="images/news.png" alt="newsletter"></div>
+                <form action="">
+                    <ul>
+                        <li>
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                          <label for="mail">E-mail:</label>
+                          <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li class="button">
+                            <button type="submit">send</button>
+                          </li>
+                    </ul>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="contactus.html">Contact Me</a>
+            </nav>
+            <p></p>
+            <div><img src="images/f.png" alt="facebook"><img src="images/t.png" alt="tweeter"><img src="images/in.png" alt="linkedin"></div>
+        </footer>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
