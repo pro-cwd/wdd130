@@ -65,49 +65,58 @@
         </div>
         <main>
             <section id="section-banner">
-                <h1>ABOUT ME</h1>
-                <p>I grew up in Quito , Ecuador. My Career in Graphic Design begun in my early twentines. After working in a particular agency in the city. I adjusted as a freelance, Being a freelancer designer is the real visual experience. I discovered my love for the technology and over the course of a few years, I begun my studies in programming. I made this website for share with you my projects. I have confidence that we could create something functional, new and attractive for your business. I invite you to become involved.</p>
+                <div class="text-box">
+                    <h1>ABOUT ME</h1>
+                    <p>I grew up in Quito , Ecuador. My Career in Graphic Design begun in my early twentines. After working in a particular agency in the city. I adjusted as a freelance, Being a freelancer designer is the real visual experience. I discovered my love for the technology and over the course of a few years, I begun my studies in programming. I made this website for share with you my projects. I have confidence that we could create something functional, new and attractive for your business. I invite you to become involved.</p>
+                </div>
                 <img src="images/omarmeza.png" alt="Omar Meza">
             </section>
             <section id="section-img">
-                <div><img src="images/image2.png" alt="computers"></div>
-                <div>
+                <div class="large-img"><img src="images/image2.png" alt="computers"></div>
+                <div class="vertical-image">
                     <img src="images/goran1.jpg" alt="Foto de Goran Ivos en Unsplash">
                     <img src="images/goran2.jpg" alt="Foto de Goran Ivos en Unsplash">
                     <img src="images/nasa.jpg" alt="Foto de NASA en Unsplash">
                 </div>
             </section>
             <section id="section-cards">
-                <div>
+                <div class="text-card">
                     <h1>SKILLS & TOOLS</h1>
                     <p>My toolbox The skills , tools and technologies I use to bring your products to life: Htmls5, css3, javascript, php, git, github, sass, Vs Code, responsive web sites, web accessibility, adobe suite </p>
                 </div>
-                <div class="card">
-                    <div><img src="images/image3.png" alt="graphic designer icon"></div>
-                    <p>I am a Product and UX Designer! I work at the intersection of curiosity, reasoning and imagination, which guide me to uncover insights, (re)frame problems and craft meaningful, future-oriented solutions.
-                        I am passionate about providing solutions to users by building accessible products.</p>   
-                </div>
-                <div class="card">
-                    <div><img src="images/developer.png" alt="developer icon"></div>
-                    <p>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
-                </div>
-
-                <div class="card">
-                    <div><img src="images/soft.png" alt="sonft icon"></div>
-                    <p>I combine human empathy, research and intelligent data to provide the highest level of satisfaction for organizations and their users.</p>
+                <div class="content-cards">
+                    <div class="card">
+                        <div><img src="images/image3.png" alt="graphic designer icon"></div>
+                        <h1><strong>Graphic design</strong></h1>
+                        <p>I am a Product and UX Designer! I work at the intersection of curiosity, reasoning and imagination, which guide me to uncover insights, (re)frame problems and craft meaningful, future-oriented solutions.
+                            I am passionate about providing solutions to users by building accessible products.</p>
+                    </div>
+                    <div class="card">
+                        <div><img src="images/developer.png" alt="developer icon"></div>
+                        <h1><strong>Web development</strong></h1>
+                        <p>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
+                    </div>
+                    <div class="card">
+                        <div><img src="images/soft.png" alt="sonft icon"></div>
+                        <h1><strong>Soft development</strong></h1>
+                        <p>I combine human empathy, research and intelligent data to provide the highest level of satisfaction for organizations and their users.</p>
+                    </div>
                 </div>
             </section>
-            <div>
-                <div>
-                    <h1>MY SKILLSET</h1>
-                    <p>Grafic design, frontend developer & web computer programing I want specialize in building complex web applications, front-end design, back-end developed, digital product design and developing visual design systems. I enjoy creating effortless user experience and designing delightful digital products. The entire process of going from a concept to release and gathering user’s feedback on either client’s or my own products is what makes me wake up everyday! I seek new opportunities for cooperation on projects around interesting dashboards, design systems or landing pages. Let’s create something awesome together!</p>
+            <div class="grid-form">
+                <div class="grid-text">
+                    <div class="form-card">
+                        <h1>MY SKILLSET</h1>
+                        <p>Grafic design, frontend developer & web computer programing I want specialize in building complex web applications, front-end design, back-end developed, digital product design and developing visual design systems. I enjoy creating effortless user experience and designing delightful digital products. The entire process of going from a concept to release and gathering user’s feedback on either client’s or my own products is what makes me wake up everyday! I seek new opportunities for cooperation on projects around interesting dashboards, design systems or landing pages. Let’s create something awesome together!</p>
+                    </div>
+                    <div class="form-card">
+                        <h1>LETS WORK TOGETHER!</h1>
+                        <p>If you’d like to talk about a Project you want help with or nee dan advice about producto design, just drop me a message at mymail@omarmeza.design I’m currently Available for any design system projects, dashboard designs or landing pages gigs. </p>
+                    </div>
                 </div>
-                <div>
-                    <h1>LETS WORK TOGETHER!</h1>
-                    <p>If you’d like to talk about a Project you want help with or nee dan advice about producto design, just drop me a message at mymail@omarmeza.design I’m currently Available for any design system projects, dashboard designs or landing pages gigs. </p>
-                </div>
-                <div><img src="images/news.png" alt="newsletter"></div>
-                <form action="">
+                <div class="grid-img"><img src="images/news.png" alt="newsletter"></div>
+                <div id="feedback"></div>
+                <form class="grid-action" action="">
                     <ul>
                         <li>
                           <label for="name">Name:</label>
@@ -131,10 +140,28 @@
                 <a href="site-plan.html">Site Plan</a>
                 <a href="contactus.html">Contact Me</a>
             </nav>
-            <p></p>
-            <div><img src="images/f.png" alt="facebook"><img src="images/t.png" alt="tweeter"><img src="images/in.png" alt="linkedin"></div>
+            <p>If you’d like to talk about a Project you want help with or nee dan advice about producto design, just drop me a message at mymail@omarmeza.design I’m currently Available for any design system projects, dashboard designs or landing pages gigs.</p>
+            <div class="social"><img src="images/f.png" alt="facebook"><img src="images/t.png" alt="tweeter"><img src="images/in.png" alt="linkedin"></div>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
     <script src="js.js"></script>
+
 </body>
 </html>
