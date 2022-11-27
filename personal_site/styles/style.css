@@ -195,25 +195,25 @@ nav a:hover {
 	color: var(--primary-color);
 	padding: 1em 0;
 }
-#section-img {
+.section-img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-#section-img .large-img {
+.section-img .large-img {
   margin: auto 0;
 }
-#section-img .large-img img {
+.section-img .large-img img {
   width: 100%;
   max-width: 750px;
   margin: 0 1em;
 }
-#section-img .vertical-image {
+.section-img .vertical-image {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#section-img .vertical-image img {
+.section-img .vertical-image img {
   width: 100%;
   max-width: 200px;
 }
