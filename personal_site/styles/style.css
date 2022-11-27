@@ -413,3 +413,6 @@ footer .social img {
   width: 100%;
   max-width: 50px;
 }
+h2 {
+  font-weight: 600;
+}
