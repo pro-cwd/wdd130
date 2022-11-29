@@ -7,17 +7,21 @@
     <title>Contact Me</title>
 
     <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="content">
-        <header>
+        <header class="topnav" id="myTopnav">
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="Omar Logo">
             </a>
             <nav>
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="project.html">Projects</a>
-                <a href="contactus.html">Contact me</a>
+                <a href="contactus.html">Contact Me</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </header>
         <!-- Slideshow container -->
@@ -58,6 +62,16 @@
             <div><img src="images/f.png" alt="facebook"><img src="images/t.png" alt="tweeter"><img src="images/in.png" alt="linkedin"></div>
         </footer>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
     <script src="js.js"></script>
 </body>
 </html>
