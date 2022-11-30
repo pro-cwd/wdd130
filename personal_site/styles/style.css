@@ -185,6 +185,7 @@ nav a:hover {
 #section-banner img, footer div img, #main-project section img {
     width: 100%;
     max-width: 300px;
+    height: fit-content;
 }
 #section-banner {
   display: flex;
@@ -430,7 +431,56 @@ footer .social img {
 h2 {
   font-weight: 600;
 }
-
+/* page projects */
+#main-project {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+}
+#main-project h1 {
+  grid-column: 1/5;
+  padding: 2em 0;
+  font-size: 3em;
+  border-bottom: 1px solid antiquewhite;
+}
+#main-project .my-style {
+  grid-column: 1/2;
+  padding: 2rem 20px;
+  border-right: 1px solid antiquewhite;
+}
+#main-project .content-project {
+  grid-column: 2/5;
+  line-height: 1.5;
+}
+#main-project .content-project section {
+  padding: 3rem 0 3rem 3rem;
+}
+#main-project .content-project section .description-title {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  border-bottom: 1px solid antiquewhite;
+  justify-content: space-between;
+}
+#main-project .content-project section .description-title .description-title__h5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#main-project .description-title__h5 h5 { 
+  padding: 0 1rem;
+}
+#main-project section .description {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+#main-project section .description p {
+  width: 400px;
+}
 
 /* responsive */
 @media screen and (max-width: 790px) {
