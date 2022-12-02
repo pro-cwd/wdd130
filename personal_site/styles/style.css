@@ -9,7 +9,7 @@
     --accent2-color: #3C9FBD;
   
     /* change the values below to your chosen font(s) */
-    --heading-font: "IM Fell French Canon SC";
+    --heading-font: 'Tenor Sans', sans-serif;
     --paragraph-font: Lato, Helvetica, sans-serif;
   
     /* these colors below should be chosen from among your palette colors above */
@@ -192,7 +192,7 @@ nav a:hover {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: var(--paragraph-font);
+  font-family: var(--heading-font);
   margin: 4rem 0;
 }
 #section-banner .text-box {
@@ -262,7 +262,7 @@ nav a:hover {
 	margin: auto;
 	text-align: center;
 	font-size: 1.2em;
-  font-family: var(--paragraph-font);
+  font-family: var(--heading-font);
 	line-height: 1.5;
 	padding: 5em 0;
 }
@@ -399,38 +399,7 @@ textarea {
 .moveDown {
   margin-top: 3em;
 }
-footer {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin-top: 5em;
-  background-color: aliceblue;
-  padding: 3em 0;
-}
-footer nav {
-  grid-column: 2/5;
-}
-footer p {
-  grid-column: 2/5;
-  grid-row: 2/3;
-  color: var(--secondary-color);
-  padding-top: 1rem;
-}
-footer .social {
-  grid-column: 5/7;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  grid-row: 1/3;
-  align-items: center;
-  padding-top: 1em;
-}
-footer .social img {
-  width: 100%;
-  max-width: 50px;
-}
-h2 {
-  font-weight: 600;
-}
+
 /* page projects */
 #main-project {
   width: 80%;
@@ -444,6 +413,7 @@ h2 {
   grid-column: 1/5;
   padding: 2em 0;
   font-size: 3em;
+  font-family: var(--heading-font);
   border-bottom: 1px solid antiquewhite;
 }
 #main-project .my-style {
@@ -465,6 +435,9 @@ h2 {
   border-bottom: 1px solid antiquewhite;
   justify-content: space-between;
 }
+.description-title h3 {
+  font-family: var(--heading-font);
+}
 #main-project .content-project section .description-title .description-title__h5 {
   display: flex;
   flex-direction: row;
@@ -480,6 +453,65 @@ h2 {
 }
 #main-project section .description p {
   width: 400px;
+}
+/* contact me */
+#main-contactme {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+  margin: auto;
+  padding: 4em 0;
+}
+#main-contactme .box-text img {
+  width: 100%;
+  max-width: 400px;
+}
+#main-contactme .box-text p {
+  width: 100%;
+  max-width: 400px;
+  font-family: var(--paragraph-font);
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+/* footer desing */
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 5em;
+  background-color: aliceblue;
+  padding: 3em 0;
+}
+footer nav {
+  grid-column: 2/5;
+}
+footer p {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+  font-family: var(--heading-font);
+  line-height: 1.3;
+}
+footer .social {
+  grid-column: 5/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row: 1/3;
+  align-items: center;
+  padding-top: 1em;
+}
+footer .social img {
+  width: 100%;
+  max-width: 50px;
+}
+h2 {
+  font-weight: 600;
+  font-family: var(--heading-font);
+  padding-bottom: 1rem;
 }
 
 /* responsive */
